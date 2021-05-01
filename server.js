@@ -22,7 +22,7 @@ app.use(cors());
 app.use(express.static('website'));
 
 // Handle GET requests to the '/' endpoint
-app.get('/', (_, res) => {
+app.get('/all', (_, res) => {
   res.status(200).send(projectData);
 });
 
